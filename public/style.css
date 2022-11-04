@@ -1,0 +1,27 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+}
+
+#drawing-board {
+  border: 1px solid #333333;
+}
+
+#drawwer {
+  background: #333333;
+  color: #ffffff;
+  height: 100%;
+  width: 200px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}

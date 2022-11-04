@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Testing Canvas</title>
+</head>
+<body id="app">
+  <section class="container">
+    <div id="drawwer">
+      <!-- Judul dan utilisasi -->
+      <p>Draw.mu</p>
+      <!-- Stroke color -->
+      <label for="stroke">Color</label>
+      <input type="color" id="input-stroke" name="stroke">
+      <!-- Line width -->
+      <label for="stroke">Line Size</label>
+      <input type="number" id="line-size" name="lineSize" value="5">
+      <!-- Button clear draw -->
+      <button id="clear-btn">Clear</button>
+    </div>
+    <div class="drawing-board">
+      <canvas id="drawing-board"></canvas>
+    </div>
+  </section>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
