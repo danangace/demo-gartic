@@ -2,7 +2,7 @@ const canvas = document.getElementById('drawing-board')
 const ctx = canvas.getContext('2d')
 const drawwer = document.getElementById('drawwer')
 const button = document.getElementById('clear-btn')
-const socket = io("http://localhost:3000")
+const socket = io("https://demo-gartics.herokuapp.com/")
 
 // initialize width and height
 canvas.width = window.innerWidth - canvas.offsetLeft
