@@ -4,6 +4,7 @@ const express = require('express')
 const http = require('http')
 const app = express()
 const server = http.createServer(app)
+const PORT = process.env.PORT || 3000
 const { Server } = require('socket.io')
 const io = new Server(server)
 let connections = []
@@ -37,8 +38,8 @@ io.on("connection", (socket) => {
   })
 })
 
-app.use(express.static("public"))
+app.use('/', express.static("public"))
 
-server.listen(process.env.PORT, () => {
-  console.log('success listen to server 3000')
+server.listen(PORT, () => {
+  console.log(`success listen to server ${PORT}`)
 })
